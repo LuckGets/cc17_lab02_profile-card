@@ -1,0 +1,130 @@
+* {margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html {
+  font-family: arial;
+}
+
+
+.wrapper {
+  margin-inline: auto;
+  margin-block: 5em;
+  display: flex;
+  width: 50%;
+  max-height: 50%;
+  border: 2px solid lightgray;
+  border-radius: 1rem;
+  position: relative;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-bottom: 2px solid lightgray;
+  padding-inline: 1em ;
+  padding-top: 2em;
+}
+
+.number {
+  background-color: red;
+  /* display: inline-block; */
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number p {
+  font-size: 2.5rem;
+}
+
+.cross-mark svg {
+  width: 35px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.profile-name p {
+  font-size: 3rem;
+  text-align: center;
+  padding: .3em;
+}
+
+
+.card {
+  width: 200px;
+  height: 260px;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  margin-inline: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h4 {
+  width: 100%;
+  font-size: 1.3rem;
+  border-top: 2px solid lightgray;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card::before {
+  content:"9";
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  top: 865px;
+  left:190px;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::after {
+  content: "X";
+  position: absolute;
+  top: 886px;
+  left: 25px;
+  color: rgb(151, 149, 149);
+  font-size: 1.3rem;
+}
+
+
+.try-gradient {
+  background-image:linear-gradient(to bottom, blue 49%, white 49%) ;
+  background-size: 100%;
+}
+
+.try-gradient-text {
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(to bottom, white 49%, blue 49%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
